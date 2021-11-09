@@ -1,0 +1,92 @@
+.current-weather {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background: linear-gradient(
+        90deg,
+        rgb(54, 53, 53, 0) 0%,
+        rgba(122, 83, 83, 0.2) 50%,
+        rgb(54, 53, 53, 0.3) 100%
+    );
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+    .current-weather {
+        background: none;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.current-condition_block,
+.current-temp_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-condition_block {
+    padding-left: 30px;
+}
+
+@media (max-width: 992px) {
+    .current-condition_block {
+        display: none;
+    }
+}
+
+.icon {
+    width: 70px;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .icon {
+        width: 50px;
+    }
+}
+
+.condition,
+.feelslike {
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 992px) {
+    .condition,
+    .feelslike {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    .condition,
+    .feelslike {
+        font-size: 10px;
+    }
+}
+
+.current-temp {
+    position: relative;
+    display: flex;
+    font-family: "oswald";
+    line-height: 115px;
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.current-temp::after {
+    content: "°";
+    font-size: 40px;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+}
+
+.feelslike::after {
+    content: "°";
+}
