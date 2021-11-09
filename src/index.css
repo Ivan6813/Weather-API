@@ -13,3 +13,19 @@ body {
     );
     min-height: 100vh;
 }
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    background: rgb(54, 53, 53, 0.3);
+    font-family: "oswald";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
