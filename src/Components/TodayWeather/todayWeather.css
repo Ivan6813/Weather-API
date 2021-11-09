@@ -1,0 +1,93 @@
+.today-weather {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background: linear-gradient(
+        90deg,
+        rgb(54, 53, 53, 0.3) 0%,
+        rgb(54, 53, 53, 0.2) 50%,
+        rgb(54, 53, 53, 0) 100%
+    );
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+@media (max-width: 992px) {
+    .today-weather {
+        background-color: rgb(54, 53, 53, 0.3);
+    }
+}
+
+.today-condition_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-today {
+    display: flex;
+}
+
+.temp,
+.temp-day,
+.temp-night {
+    font-family: "oswald";
+    font-size: 21px;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    .temp,
+    .temp-day,
+    .temp-night {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .temp,
+    .temp-day,
+    .temp-night {
+        font-size: 13px;
+    }
+}
+
+.temp::after,
+.temp-day::after,
+.temp-night::after {
+    content: "°";
+}
+
+.temp-night {
+    margin-left: 10px;
+}
+
+.pressure,
+.humidity,
+.wind_dir,
+.wind_kph {
+    font-family: "Montserrat";
+    font-size: 13px;
+    color: white;
+    margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+    .pressure,
+    .humidity,
+    .wind_dir,
+    .wind_kph,
+    .time {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 320px) {
+    .pressure,
+    .humidity,
+    .wind_dir,
+    .wind_kph,
+    .time {
+        font-size: 10px;
+    }
+}
