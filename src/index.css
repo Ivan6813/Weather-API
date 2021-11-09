@@ -1,1 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.wrapper {
+    background: linear-gradient(
+        0deg,
+        rgb(36, 168, 170) 0%,
+        rgba(18, 134, 135, 1) 35%,
+        rgba(1, 49, 50, 1) 100%
+    );
+    min-height: 100vh;
+}

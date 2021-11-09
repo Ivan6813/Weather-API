@@ -1,8 +1,11 @@
-
+import SearchBar from './Components/SearchBar/SearchBar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper">
+      <div className="container">
+        <SearchBar/>
+      </div>
     </div>
   );
 }
