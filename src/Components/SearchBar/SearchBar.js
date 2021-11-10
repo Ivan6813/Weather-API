@@ -13,7 +13,7 @@ function SearchBar () {
     const [data, setData] = useState(null);
 
     const search = () => {
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=a19108012f8345c199672427210910&q=${city}&days=1&aqi=no&alerts=no&lang=RU`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=a19108012f8345c199672427210910&q=${city}&days=1&aqi=no&alerts=no&lang=RU`)
         .then(res => res.json())
         .then(result => setData(result))
     };
