@@ -8,7 +8,7 @@ const Currentweather = (props) => {
     return ( 
         <div className="current-weather col-12 col-lg-5">
             <div className="current-condition_block">
-                <img src={data.current.condition.icon} className="icon" alt=""/>
+                <img src={data.current.condition.icon} className="icon" alt="condition"/>
                 <div className="condition">{data.current.condition.text}</div>
             </div>
             <div className="current-temp_block">

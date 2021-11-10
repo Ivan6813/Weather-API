@@ -20,7 +20,7 @@ const CurrentDate = (props) => {
     return (
         <div className="row pt-4 justify-content-center">
             <div className="location col-11 col-lg-12">{data.location.name}, {data.location.country}</div>
-            <div className="current-date col">{getDate(new Date())}</div>
+            <div className="current-date col-12">{getDate(new Date())}</div>
         </div>
     );
 }

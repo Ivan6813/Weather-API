@@ -51,7 +51,7 @@
 .condition,
 .feelslike {
     font-family: "Montserrat";
-    font-size: 15px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -74,7 +74,7 @@
     display: flex;
     font-family: "oswald";
     line-height: 115px;
-    font-size: 80px;
+    font-size: 100px;
     color: white;
     text-shadow: 2px 2px black;
 }
@@ -83,7 +83,7 @@
     content: "°";
     font-size: 40px;
     position: absolute;
-    top: -15px;
+    top: -20px;
     right: -20px;
 }
 
