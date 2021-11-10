@@ -5,6 +5,12 @@
     color: white;
 }
 
+@media (max-width: 992px) {
+    .location {
+        font-size: 30px;
+    }
+}
+
 .current-date {
     text-align: center;
     font-family: "Montserrat";

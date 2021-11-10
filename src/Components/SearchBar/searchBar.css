@@ -18,13 +18,13 @@
     border-radius: 5px;
     border: none;
     font-family: "Montserrat";
-    font-size: 12px;
+    font-size: 15px;
     color: rgb(252, 240, 240);
 }
 
 @media (max-width: 320px) {
     .search-btn {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 

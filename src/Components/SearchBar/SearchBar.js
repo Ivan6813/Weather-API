@@ -22,12 +22,12 @@ function SearchBar () {
         <div>
             <div className="row justify-content-center pt-3 pt-lg-4">
                 <input className="search-bar col-8 col-lg-7" type="text" onChange={(event)=>{setCity(event.target.value);}} placeholder="Введите название города"/>
-                <button className="search-btn col-3 col-sm-2 col-md-1" onClick={search}>Get Weather</button>
+                <button className="search-btn col-3 col-sm-2 col-md-1" onClick={search}>Search</button>
             </div>
             {(data !== null && data.location !== undefined) ? (
                 <div>
                     <CurrentDate data={data}/>
-                    <div className="row justify-content-evenly pt-lg-5">
+                    <div className="row justify-content-center justify-content-lg-evenly pt-lg-5">
                         <Currentweather data={data}/>
                         <TodayWeather data={data}/>
                     </div>
