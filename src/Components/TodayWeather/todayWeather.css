@@ -1,6 +1,7 @@
 .today-weather {
     display: flex;
     align-items: flex-end;
+    -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
     background: linear-gradient(
         90deg,

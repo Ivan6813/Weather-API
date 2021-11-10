@@ -6,7 +6,7 @@ const TodayWeather = (props) => {
     const data = props.data;
 
     return ( 
-        <div className="today-weather col-lg-5 col-md-7 col-11">
+        <div className="today-weather col-lg-5 col-md-7 col-11 justify-content-evenly">
             <div className="today-condition_block">
                 <div className="temp-today">
                     <div className="temp-day">Днём: {Math.round(data.forecast.forecastday[0].day.maxtemp_c)}</div>
